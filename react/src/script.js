@@ -187,7 +187,7 @@ async function get_ip_info()
 
 async function get_geocoding_info(street_val, city_val, state_val)
 {
-    const geocoding_api_key = 'AIzaSyAeqQ8vpfsXYxVixIgIhHmwARL7wp09ERU';
+    const geocoding_api_key = '<YOUR_GOOGLE_API_KEY>';
     let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${street_val}, ${city_val}, ${state_val}&key=${geocoding_api_key}`;
     try
 	{
