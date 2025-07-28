@@ -1,0 +1,158 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .react-select__control {
+    width: 100%;
+  }
+
+  .weather-table {
+    width: 100%; /* Full width */
+   
+  }
+  
+  .weather-table  th, .weather-table  td {
+    font-size: 12px; 
+    padding: 0.1rem; 
+    word-wrap: break-word;
+  }
+  
+  .status-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
+
+  .ratio.ratio-21x9 {
+    height: 350px; /* Adjust to a suitable height for mobile view */
+  }
+}
+
+
+input[type="checkbox"].form-check-input:checked {
+  background-color: #f5b743; /* Yellow color */
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.is-invalid {
+  background-image: none !important;
+}
+
+.is-invalid .react-select__control {
+  border-color: red !important;
+}
+
+.btn-inactive {
+  background-color: transparent !important; /* No background */
+  color: #0d6efd !important; /* Blue text color */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s forwards;
+}
+
+.slide-out-left {
+  animation: slideOutToLeft 1s forwards;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutToRight 1s forwards;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
